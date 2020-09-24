@@ -144,6 +144,17 @@
 
 }
 
+/* 애니메이션 */
+
+@keyframes main_fade_in{
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 /* 메인 */
 main{
@@ -155,6 +166,8 @@ main{
     height: 646px;
     text-align: center;
     margin: 125px auto 0 ;
+
+
 
 
 }
@@ -176,6 +189,16 @@ main{
 
 }
 
+.main_header img {
+
+    animation: main_fade_in 0.5s ease 2.5s forwards;
+    opacity: 0;
+}
+.main_button {
+    animation: main_fade_in 0.5s ease 3s forwards;
+    opacity: 0;
+
+}
 
 
 h3{
@@ -199,6 +222,9 @@ h4{
     position: absolute;
     left: 80px;
     bottom: 90px;
+
+    animation: main_fade_in 0.5s ease 0.5s forwards;
+    opacity: 0;
 }
 .black_glazed_image {
     position: absolute;
@@ -206,6 +232,10 @@ h4{
     
     left: 18%;
     bottom: -2%;
+
+    animation: main_fade_in 0.5s ease 0.5s forwards;
+    opacity: 0;
+
 }
 
 .black_glazed_image img {
@@ -218,12 +248,19 @@ h4{
     position: absolute;
     left: 500px;
     top: 155px;
+    animation: main_fade_in 0.5s ease 1s forwards;
+    opacity: 0;
 }
 
 .hazelnut_image{
     position: absolute;
     left: 38%;
     bottom: 10%;
+
+    animation: main_fade_in 0.5s ease 1s forwards;
+    opacity: 0;
+
+
 }
 .hazelnut_image img {
     width: 379px;
@@ -235,12 +272,17 @@ h4{
     position: absolute;
     left: 730px;
     top: 150px;
+    animation: main_fade_in 0.5s ease 1.5s forwards;
+    opacity: 0;
 }
 
 .apple_cookie_image{
     position: absolute;
     left: 64%;
     bottom: 1%;
+    animation: main_fade_in 0.5s ease 1.5s forwards;
+    opacity: 0;
+
 }
 .apple_cookie_image img {
     width: 328px;
@@ -252,12 +294,16 @@ h4{
     position: absolute;
     left: 81%;
     bottom: 5%;
+    animation: main_fade_in 0.5s ease 2s forwards;
+    opacity: 0;
 }
 
 .frappuccino_image{
     position: absolute;
     left: 81%;
     bottom: 5%;
+    animation: main_fade_in 0.5s ease 2s forwards;
+    opacity: 0;
 }
 
 .frappuccino_image img {
