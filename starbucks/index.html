@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body onscroll="scrollFadeIn()">
 <!-- 헤더-->
     <header>
         <nav id="gnb">
@@ -183,11 +183,11 @@
     <!-- main bean -->
 <section id="main_bean_wrap">
     <div class="main_bean_inner">
-        <figure class="bean_image">
+        <figure  id="id_bean_image" class="bean_image">
             <img src="img/20_autumn1_bean.png">
         </figure>
 
-        <div class="bean_conts">
+        <div id="id_bean_conts" class="bean_conts">
 
 
         <div class="bean_text">
@@ -388,8 +388,30 @@
 </footer>
 
 
+
 </main>
+
+<script>
+    function scrollFadeIn() {
+        console.log (document.body.scrollTop);
+
+        // if ( 조건 ) { 실행 }
+        if (document.body.scrollTop > 500) //트리거 시점 (trigger)
+        {
+            document.getElementById('id_bean_image').style 
+            = "animation : fade_in_left 2s ease forwards ;";
+            document.getElementById('id_bean_conts').style 
+            = "animation : fade_in_right 2s ease forwards ;";
+
+        }
+    }
+
+
+</script>
 
 
 </body>
+
+
+
 </html>
